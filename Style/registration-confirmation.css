@@ -1,0 +1,69 @@
+.confirmation-main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-paper-plane {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    animation-name: example;
+    animation-duration: 2s;
+    height: 80px;
+}
+
+@keyframes example {
+    0% {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(212, 163, 115, 1);
+    font-size: 10px;
+    }
+
+    25% {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+    }
+
+    50% {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(212, 163, 115, 1);
+        font-size: 30px;
+    }
+
+    100% {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 40px;
+    }
+}
+
+a:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .confirmation-main-section {
+        padding: 20px;
+        text-align: center;
+    }
+  
+}

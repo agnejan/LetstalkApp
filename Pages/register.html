@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/home.css" />
+    <link rel="stylesheet" href="../Style/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/336751a46e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <img class="logo" src="../Images/LetsTalk.svg" />
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="psychologists.html">Psychologists</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html#reviews-section">Reviews</a></li>
+      </ul>
+      <li>
+        <a class="registration-item active" href="register.html"> Register </a>
+      </li>
+    </header>
+    <div class="register-main-section">
+      <h1>Register</h1>
+      <form action="registration-confirmation.html">
+        <div class="text-input-fields">
+          <input
+            type="text"
+            placeholder="Type your name"
+            class="text-input-field"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Type your surname"
+            class="text-input-field"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Type your email"
+            class="text-input-field"
+            required
+          />
+          <div>
+            <select name="Country" class="text-input-field" required>
+              <option value="" disabled selected hidden>
+                Country of residence
+              </option>
+              <option value="Germany">Germany</option>
+              <option value="Spain">Spain</option>
+              <option value="France">France</option>
+              <option value="Portugal">Portugal</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-input-fields">
+          <div class="select-gender-section">
+            <h3>Gender</h3>
+            <div class="gender-item">
+              <input
+                type="radio"
+                value="male"
+                id="male"
+                name="gender"
+                required
+              />
+              <label for="male">Male</label>
+            </div>
+            <div class="gender-item">
+              <input
+                type="radio"
+                value="female"
+                id="female"
+                name="gender"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="select-language-section">
+            <h3>Language</h3>
+            <div class="language-items">
+              <div class="language-item">
+                <input type="checkbox" value="EN" id="EN" />
+                <label for="EN">EN</label><br />
+              </div>
+              <div class="language-item">
+                <input type="checkbox" value="ES" id="ES" />
+                <label for="ES">ES</label><br />
+              </div>
+              <div class="language-item">
+                <input type="checkbox" value="PT" id="PT" />
+                <label for="PT">PT</label><br />
+              </div>
+              <div class="language-item">
+                <input type="checkbox" value="DE" id="DE" />
+                <label for="DE">DE</label><br />
+              </div>
+              <div class="language-item">
+                <input type="checkbox" value="FR" id="FR" />
+                <label for="FR">FR</label><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="terms-conditions-section">
+          <h3>Terms and Conditions</h3>
+          <ul>
+            <li>I agree to all the below stated terms:</li>
+            <ol>
+              <li>I agree to LetsTalk <a>privacy policy</a>.</li>
+              <li>I agree to the general <a>terms and conditions</a>.</li>
+            </ol>
+          </ul>
+          <ul>
+            <li>
+              LetsTalk promises full confidentiality and data security of its
+              clients.
+            </li>
+          </ul>
+        </div>
+        <!-- <div>
+          <button class="call-to-action-button-green">
+            <a href="registration-confirmation.html">Submit</a>
+          </button>
+        </div> -->
+        <input type="submit" class="call-to-action-button-green" />
+      </form>
+    </div>
+    <footer>
+      <div>© LetsTalk, 2022</div>
+      <div class="social-links">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a> <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <form action="" class="newsletter-subscribe">
+        <label for="email-newsletter"> Want to receive our newsletter?</label>
+        <input
+          type="text"
+          id="email-newsletter"
+          placeholder="Your email"
+          required
+        />
+        <input
+          type="submit"
+          class="call-to-action-button-green"
+          value="Subscribe"
+        />
+      </form>
+    </footer>
+  </body>
+</html>

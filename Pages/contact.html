@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/home.css" />
+    <link rel="stylesheet" href="../Style/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/336751a46e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <img class="logo" src="../Images/LetsTalk.svg" alt="logo" />
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="psychologists.html">Psychologists</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="#reviews-section">Reviews</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a class="registration-item" href="register.html">Register</a>
+        </li>
+      </ul>
+    </header>
+    <section class="contact-main-section">
+      <div class="location-section">
+        <div>
+          <h3>
+            <i class="fa-solid fa-location-dot"></i> You can find us here:
+          </h3>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38814.43928543977!2d13.353602886199962!3d52.553289320469474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a853bfed7d9743%3A0xea96458506d707c8!2ssimplypsychology!5e0!3m2!1sen!2sde!4v1660750961577!5m2!1sen!2sde"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact-section">
+        <div>
+          <h3><i class="fa-solid fa-envelope"></i> Reach out to us on:</h3>
+        </div>
+        <div>
+          <a href="mailto:letstalk@letstalk.com">letstalk@letstalk.com</a>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-main-section" id="reviews-section">
+      <h1>What our <span class="highlight-text">clients</span> say about us</h1>
+      <div class="reviews-section">
+        <div class="review-boxes">
+          <div>Daisy, Spain</div>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>'Helped me a lot during Covid time'</div>
+        </div>
+        <div class="review-boxes">
+          Danny, Germany
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            'Everything was great, the on-demand service was something I
+            needed!I got connected to professional really fast and continuing my
+            sessions to this day. Highly recommended'
+          </div>
+        </div>
+        <div class="review-boxes">
+          Gabriella,France
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>'Amazing service, great support'</div>
+        </div>
+      </div>
+      <div class="more-reviews">More reviews</div>
+    </section>
+    <footer>
+      <div>© LetsTalk, 2022</div>
+      <div class="social-links">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a> <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <form
+        action="registration-confirmation.html"
+        class="newsletter-subscribe"
+      >
+        <label for="email-newsletter"> Want to receive our newsletter?</label>
+        <input
+          type="text"
+          id="email-newsletter"
+          placeholder="Your email"
+          required
+        />
+        <input
+          type="submit"
+          class="call-to-action-button-green"
+          value="Subscribe"
+        />
+      </form>
+    </footer>
+  </body>
+</html>

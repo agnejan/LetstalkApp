@@ -1,0 +1,120 @@
+.contact-main-section {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    justify-content: center;
+    gap: 10vw;
+
+}
+
+iframe {
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.location-section, .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    justify-content: center;
+}
+
+.contact-section a {
+    font-size: 20px;
+    color: rgba(212, 163, 115, 1);
+}
+
+a:hover {
+    color: rgba(179, 188, 150, 1);
+    font-weight: 400;
+}
+
+.reviews-main-section {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.reviews-section { 
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.fa-star {
+    color:rgb(255, 238, 125);
+    font-size: 15px;
+    margin-bottom: 3vh;
+}
+
+.review-boxes {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.728);
+    border-radius: 30px;
+    height: 40vh;
+    width: 25vw;
+    flex-direction: column;
+    row-gap: 1vh;
+    font-weight: 200;
+    padding-left:1vw;
+    padding: 2vh;
+    font-size: 15px;
+}
+
+.more-reviews {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 13px;
+}
+
+.more-reviews:hover {
+    background-color:black;
+    color:rgba(254, 250, 224, 1);
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-main-section {
+        flex-direction: column;
+        height: auto;
+        gap: 5vh;
+    }
+
+iframe { 
+    width: auto;
+    height: auto;
+}
+
+    .reviews-main-section {
+        height: auto;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+        .reviews-main-section h1 {
+            text-align: center;
+        }
+
+    .reviews-section {
+        flex-direction: column;
+        gap: 2vh;
+        padding-bottom: 5vh;
+    }
+
+    .review-boxes {
+        height: auto;
+        width: auto;
+    }
+
+    .contact-section, .location-section {
+        gap:unset;
+    }
+
+}

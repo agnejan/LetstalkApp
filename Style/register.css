@@ -1,0 +1,125 @@
+.register-main-section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+}
+
+.text-input-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3vw;
+    row-gap: 3vh;
+    flex-wrap: wrap;
+}
+
+.select-input-fields {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.select-gender-section,.select-language-section {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.terms-conditions-section h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.terms-conditions-section ul {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.terms-conditions-section ol {
+    font-size:15px;
+}
+
+.terms-conditions-section a {
+   text-decoration: underline;
+}
+
+
+button {
+    margin-bottom: 5vh;
+}
+
+.text-input-field {
+    border-radius: 25px;
+    padding: 5px;
+    width: 20vw;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace; }
+
+input:focus {
+    outline:none;
+}
+
+input::placeholder {
+    color: rgb(199, 198, 198);
+    font-weight: 200;
+}
+
+.select-language-section {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.language-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.language-item,.gender-item {
+    margin-right: 2vw;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.active {
+    border: none;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3vh;
+}
+
+@media only screen and (max-width: 800px) {
+    .register-main-section {
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    .text-input-field {
+        width: auto;
+    }
+
+    .select-input-fields {
+        column-gap: 5vw;
+    }
+
+    .terms-conditions-section ul {
+        font-size: 15px;
+        padding-right: 40px;
+    }
+}
